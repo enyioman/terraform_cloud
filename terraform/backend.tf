@@ -9,3 +9,11 @@
 # }
 
 
+terraform {
+    backend "remote" {
+        organization = "yorman" 
+            workspaces {
+                name = "terraform_cloud"
+            }        
+    }
+}
